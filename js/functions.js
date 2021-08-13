@@ -8,9 +8,9 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello ("John") {
-    var  ("Hello");
-    return
+function sayHello (name) {
+    var  message = "Hello, " + name;
+    return message;
 }
 /**
  * TODO:
@@ -19,10 +19,8 @@ function sayHello ("John") {
  *
  * console.log 'helloMessage' to check your work
  */
-function sayHello ("John") {
-    var result = John;
-    return result;
-}
+
+
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
