@@ -5,7 +5,18 @@
     <title>external.js</title>
 </head>
 <body>
-    console.log("Hello from external JavaScript")
-
+    <script>
+    var a = prompt("How many days are you renting The Little Mermaid?");
+    // console.log('The user entered: ' + userInput);
+    var num1 = Number(a);
+    var b = prompt("How many days are you renting Brother Bear?");
+    // console.log('The user entered: ' + userInput);
+    var num2 = Number(b);
+    var c = prompt("How many days are you renting Hercules?");
+    // console.log('The user entered: ' + userInput);
+    var num3 = Number(c);
+    var result = Number(a)+Number(b)+Number(c);
+    alert("Your total is $" + result * 3 );
+    </script>
 </body>
 </html>
