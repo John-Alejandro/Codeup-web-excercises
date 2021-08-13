@@ -19,7 +19,10 @@ function sayHello (name) {
  *
  * console.log 'helloMessage' to check your work
  */
-
+function sayHello (name) {
+    var helloMessage = name;
+    console.log("helloMessage")
+}
 
 /**
  * TODO:
@@ -27,7 +30,7 @@ function sayHello (name) {
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-
+    var myName = "John";
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
