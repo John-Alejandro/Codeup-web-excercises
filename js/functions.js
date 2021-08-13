@@ -20,21 +20,17 @@ function sayHello (name) {
  * console.log 'helloMessage' to check your work
  */
 function sayHello (name) {
-    var helloMessage = "John" + name;
+    var helloMessage = "Hello, " + name;
     return helloMessage;
 }
-    console.log(helloMessage)
+    console.log("helloMessage")
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-function sayHello(myName) {
-    var helloMessage = "Hello" + myName;
     var myName = "John";
-    return helloMessage
-}
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -57,7 +53,14 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-
+function isTwo(number) {
+    if (number === 2) {
+        return true;
+    }else {
+        return false;
+    }
+}
+    console.log(isTwo(random))
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
