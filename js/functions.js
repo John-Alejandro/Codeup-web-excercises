@@ -80,8 +80,8 @@ function calculateTip(total,tippercentage) {
  * then display the dollar amount they should tip
  */
 var userbill = prompt("How much is the bill?")
-var usertip = prompt("How was service and how much would you like to tip?")
-alert("Thank you so much, + "$ ")
+var usertip = prompt("How much would you like to tip?")
+alert("Thank you so much, " + "$ ")
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -96,3 +96,6 @@ alert("Thank you so much, + "$ ")
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount(originalprice,discountPercent) {
+    return originalprice-((originalprice * discountPercent)/100);
+}
