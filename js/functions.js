@@ -8,9 +8,8 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello (name) {
-    var  message = "Hello, " + name;
-    return message;
+function sayHello(name) {
+    return "Hello, " + name;
 }
 /**
  * TODO:
@@ -19,10 +18,8 @@ function sayHello (name) {
  *
  * console.log 'helloMessage' to check your work
  */
-function sayHello (name) {
+sayHello(name)
     var helloMessage = "Hello, " + name;
-    return helloMessage;
-}
     console.log("helloMessage")
 /**
  * TODO:
@@ -31,6 +28,7 @@ function sayHello (name) {
  * console.
  */
     var myName = "John";
+    console.log(sayHello(myName))
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -56,9 +54,8 @@ var random = Math.floor((Math.random() * 3) + 1);
 function isTwo(number) {
     if (number === 2) {
         return true;
-    }else {
-        return false;
     }
+        return false;
 }
     console.log(isTwo(random))
 /**
@@ -72,7 +69,11 @@ function isTwo(number) {
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-
+function calculateTip(t,p){
+    var t = random;
+    var tip = t * p;
+    return tip;
+}
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
