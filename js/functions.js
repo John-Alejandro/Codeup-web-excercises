@@ -18,7 +18,7 @@ function sayHello(name) {
  *
  * console.log 'helloMessage' to check your work
  */
-sayHello(name)
+sayHello(name);
     var helloMessage = "Hello, " + name;
     console.log("helloMessage")
 /**
@@ -72,7 +72,7 @@ function isTwo(number) {
 function calculateTip(total,tippercentage) {
     return (total * tippercentage)/100;
 }
-
+    console.log("calculateTip");
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -81,7 +81,7 @@ function calculateTip(total,tippercentage) {
  */
 var userbill = prompt("How much is the bill?")
 var usertip = prompt("How much would you like to tip?")
-alert("Thank you so much, " + "$ ")
+alert("Thank you so much, here's your tip " + "$" + usertip + ".");
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
