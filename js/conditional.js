@@ -19,18 +19,20 @@ console.log("It's working")
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor (input) {
-    if (input) {
+function analyzeColor(input) {
+    if (input === "blue") {
         // code here gets executed if conditional evaluates to true
         alert("The ocean appears blue.")
-    } else if (input) {
+    } else if (input === "red") {
         //code here gets executed only if condition1 is false *and* condition2 evaluates to true
-        alert("Your garden roses are a very vivid red.")
+        alert("Your garden roses are a vivid red.")
     } else {
         //code here gets executed if neither condition1 nor condition2 evaluate to true
         alert("I'm not sure what color that is.")
+
     }
 }
+console.log("The function analyzeColor returns value.");
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -43,13 +45,36 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+function analyzeColor(input) {
+    if (input === "blue") {
+        // code here gets executed if conditional evaluates to true
+        alert("The ocean appears blue.")
+    } else if (input === "red") {
+        //code here gets executed only if condition1 is false *and* condition2 evaluates to true
+        alert("Your garden roses are a vivid red.")
+    } else {
+        //code here gets executed if neither condition1 nor condition2 evaluate to true
+        alert("I'm not sure what color that is.")
 
+    }
+}
+console.log("The function analyzeColor returns different values.");
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-
+switch (analyzeColor) {
+    case "blue":
+        alert("The ocean appears blue.");
+        break;
+    case "red":
+        alert("Your garden roses are a vivid red.");
+        break;
+    default:
+        alert("I'm not sure what color that is.");
+        break;
 /**
+ *
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
