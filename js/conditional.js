@@ -21,13 +21,10 @@ console.log("It's working")
  */
 function analyzeColor(input) {
     if (input === "blue") {
-        // code here gets executed if conditional evaluates to true
         alert("The ocean appears blue.")
     } else if (input === "red") {
-        //code here gets executed only if condition1 is false *and* condition2 evaluates to true
         alert("Your garden roses are a vivid red.")
     } else {
-        //code here gets executed if neither condition1 nor condition2 evaluate to true
         alert("I'm not sure what color that is.")
 
     }
@@ -47,13 +44,10 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 function analyzeColor(input) {
     if (input === "blue") {
-        // code here gets executed if conditional evaluates to true
         alert("The ocean appears blue.")
     } else if (input === "red") {
-        //code here gets executed only if condition1 is false *and* condition2 evaluates to true
         alert("Your garden roses are a vivid red.")
     } else {
-        //code here gets executed if neither condition1 nor condition2 evaluate to true
         alert("I'm not sure what color that is.")
 
     }
@@ -73,6 +67,8 @@ switch (analyzeColor) {
     default:
         alert("I'm not sure what color that is.");
         break;
+}
+console.log("Switch-case is working");
 /**
  *
  * TODO:
@@ -80,7 +76,8 @@ switch (analyzeColor) {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+var analyzeColor = prompt("Pick a color?");
+alert("You picked, " + analyzeColor + " that's a nice color.");
 /* ########################################################################## */
 
 /**
@@ -102,6 +99,10 @@ switch (analyzeColor) {
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculateTotal(totalAmount,luckyDiscount) {
+    return totalAmount-(totalAmount * luckyDiscount);
+
+}
 
 /**
  * TODO:
