@@ -97,5 +97,6 @@ alert("Thank you so much, here's your tip " + "$" + usertip + ".");
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 function applyDiscount(originalprice,discountPercent) {
-    return originalprice-((originalprice * discountPercent)/100);
+    var discount = originalprice-(originalprice * discountPercent);
+    return discount;
 }
