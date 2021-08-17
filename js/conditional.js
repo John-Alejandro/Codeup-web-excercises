@@ -99,8 +99,12 @@ alert("You picked, " + analyzeColor + " that's a nice color.");
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-function calculateTotal(totalAmount,luckyDiscount) {
-    return totalAmount-(totalAmount * luckyDiscount);
+function calculateTotal(totalAmount,luckyNumber){
+    return totalAmount - ((totalAmount * luckyNumber)/10);
+
+
+
+
 
 }
 
