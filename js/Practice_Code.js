@@ -22,17 +22,20 @@ console.log("Practice Code Open and Running");
 // // By adding concatenation(+) to alert and enetring input in this case userconfirm you get a true statement. Boolean -True / False
 
 // var userLunch = prompt("What did you have for lunch today?")
-// // prompt is always proceeded by a var "name" and can be followed up with alert and var "name" input
+// // prompt is always proceeded by a var "name" and can be followed up with alert "comments" and + var "name" input
 // alert("The user had " + userLunch + " for lunch!")
 function sayHello(name) {
     return "Hello, " + name;
 // // all functions must be in format shown with () and {} need a return statement
 }
     console.log(sayHello("codeup"));
+
 var helloMessage = sayHello("John");
     console.log(helloMessage);
+
 var myName = "John Alejandro";
     console.log(sayHello(myName))
+
 // in order to run or call function - you can use console.log with ( "function name ( and whatever you want it to say"))
 //  function myPets(name) {
 //      return "Their names are, " + name;
@@ -80,5 +83,23 @@ var random = Math.floor((Math.random() * 3) + 1);
     function isTwo(number) {
         console.log("Our number is: " + number);
         return number === 2;
-    }
-    console.log(isTwo(random));
+}
+    // console.log(isTwo(random));
+// console.log inside function {} calls function and in this case the return is a boolean value second console.log calls function with input
+
+// function calculateTip(tipPercentage,total){
+//         return tipPercentage * total;
+// }
+// console.log(calculateTip(.2,20));
+// console.log(calculateTip(.5,50));
+// console.log(calculateTip(.35,20));
+//
+// var userBill = prompt("How much was your Bill?");
+// var userTip = prompt("How much would you like to tip in a whole number?") / 100;
+// // userTip = userTip / 100;
+// alert("Thank you so much for your patronage - You will be tipping : $" + calculateTip(userTip,userBill));
+
+function applyDiscount(originalPrice,discountpercent){
+    return originalPrice -(originalPrice * discountpercent);
+}
+
