@@ -24,48 +24,61 @@ console.log("Practice Code Open and Running");
 // var userLunch = prompt("What did you have for lunch today?")
 // // prompt is always proceeded by a var "name" and can be followed up with alert and var "name" input
 // alert("The user had " + userLunch + " for lunch!")
-// function sayHello(name) {
-//     return "Hello, " + name;
+function sayHello(name) {
+    return "Hello, " + name;
 // // all functions must be in format shown with () and {} need a return statement
-// }
-// console.log(sayHello("codeup"));
+}
+    console.log(sayHello("codeup"));
+var helloMessage = sayHello("John");
+    console.log(helloMessage);
+var myName = "John Alejandro";
+    console.log(sayHello(myName))
 // in order to run or call function - you can use console.log with ( "function name ( and whatever you want it to say"))
-// function myPets(name) {
-//     return "Their names are, " + name;
+//  function myPets(name) {
+//      return "Their names are, " + name;
 // }
-// console.log(myPets("Bandit and Coco Chanel"));
+// // console.log(myPets("Bandit and Coco Chanel"));
+//
+// function favMovie(name) {
+//     return "My favorite movie is, " + name;
+// }
+// console.log(favMovie("The Big Blue"));
+// // console.log must be outside {} of function brackets in order to work.
+//
+// function keepTrying(name) {
+//     return "Do not give up," + name;
+// }
+//     console.log(keepTrying(" it will get better."));
+// // console.log must be outside {} of function brackets in order to work.
+//
+// function color(name) {
+//     return "My favorite color is, " + name;
+// }
+// console.log(color( "red."));
+// // console.log must be outside {} of function brackets in order to work.
+//
+// function underStand(name) {
+//     return "Are you starting to understand, " + name;
+// }
+// console.log(underStand("functions?"));
+// // console.log must be outside {} of function brackets in order to work.
+//
+// function oneMore(name) {
+//     return "Keep it up don't give up on understanding, " + name;
+// }
+// console.log(oneMore("functions."));
+// // console.log must be outside {} of function brackets in order to work.
+//
+// function noMistakes(name) {
+//     return "You almost got it with out any " + name;
+// }
+// console.log(noMistakes("mistakes."));
+// // console.log must be outside {} of function brackets in order to work.
 
-function favMovie(name) {
-    return "My favorite movie is, " + name;
-}
-console.log(favMovie("The Big Blue"));
-// console.log must be outside {} of function brackets in order to work.
+var random = Math.floor((Math.random() * 3) + 1);
 
-function keepTrying(name) {
-    return "Do not give up," + name;
-}
-    console.log(keepTrying(" it will get better."));
-// console.log must be outside {} of function brackets in order to work.
-
-function color(name) {
-    return "My favorite color is, " + name;
-}
-console.log(color( "red."));
-// console.log must be outside {} of function brackets in order to work.
-
-function underStand(name) {
-    return "Are you starting to understand, " + name;
-}
-console.log(underStand("functions?"));
-// console.log must be outside {} of function brackets in order to work.
-
-function oneMore(name) {
-    return "Keep it up don't give up on understanding, " + name;
-}
-console.log(oneMore("functions."));
-// console.log must be outside {} of function brackets in order to work.
-
-function noMistakes(name) {
-    return "You almost got it with out any " + name;
-}
-console.log(noMistakes("mistakes."));
+    function isTwo(number) {
+        console.log("Our number is: " + number);
+        return number === 2;
+    }
+    console.log(isTwo(random));
