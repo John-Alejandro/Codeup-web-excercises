@@ -18,7 +18,11 @@ function oddEvenRandomNumber() {
 
 function numberPyramid() {
     for ( var i = 1; i <= 9; i++) {
-        console.log(i + i);
+        var number = "";
+        for ( var j =1; j <= i; j++) {
+            number = number + i.toString()
+        }
+        console.log(number);
 
     }
 }
@@ -26,7 +30,7 @@ function numberPyramid() {
 // numberPyramid()
 
 function countDown() {
-    for (var i = 100; i >= 5; i-- )
+    for (var i = 100; i >= 5; i=i-5 )
         console.log (i)
 }
 
