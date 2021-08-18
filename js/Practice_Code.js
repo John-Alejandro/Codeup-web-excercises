@@ -36,6 +36,36 @@ console.log("Practice Code Open and Running");
 // console.log(myPets("Bandit and Coco Chanel"));
 
 function favMovie(name) {
-    return "My favorite movie is, " + favMovie;
+    return "My favorite movie is, " + name;
 }
 console.log(favMovie("The Big Blue"));
+// console.log must be outside {} of function brackets in order to work.
+
+function keepTrying(name) {
+    return "Do not give up," + name;
+}
+    console.log(keepTrying(" it will get better."));
+// console.log must be outside {} of function brackets in order to work.
+
+function color(name) {
+    return "My favorite color is, " + name;
+}
+console.log(color( "red."));
+// console.log must be outside {} of function brackets in order to work.
+
+function underStand(name) {
+    return "Are you starting to understand, " + name;
+}
+console.log(underStand("functions?"));
+// console.log must be outside {} of function brackets in order to work.
+
+function oneMore(name) {
+    return "Keep it up don't give up on understanding, " + name;
+}
+console.log(oneMore("functions."));
+// console.log must be outside {} of function brackets in order to work.
+
+function noMistakes(name) {
+    return "You almost got it with out any " + name;
+}
+console.log(noMistakes("mistakes."));
