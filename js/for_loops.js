@@ -1,11 +1,10 @@
 console.log("Yup, \"fruit\" for_loops.js is up and running.")
 
-// function showMultiplicationTable(x) {
-//     for ( var i = 1; i <= 10; i++) {
-//         console.log( x + " x " + i + " = " + i*x)  ;
-//     }
-// }
-
+function showMultiplicationTable(x) {
+    for ( var i = 1; i <= 10; i++) {
+        console.log( x + " x " + i + " = " + i*x)  ;
+    }
+}showMultiplicationTable(7)
 function oddEvenRandomNumber() {
     for ( var i = 19; i <200; i++) {
         if ( i % 3 === 0)
@@ -14,7 +13,7 @@ function oddEvenRandomNumber() {
         console.log(i + " is even.");
     }
 }
-// oddEvenRandomNumber()
+oddEvenRandomNumber()
 
 function numberPyramid() {
     for ( var i = 1; i <= 9; i++) {
@@ -27,7 +26,7 @@ function numberPyramid() {
     }
 }
 
-// numberPyramid()
+numberPyramid()
 
 function countDown() {
     for (var i = 100; i >= 5; i=i-5 )
