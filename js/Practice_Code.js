@@ -14,11 +14,11 @@ console.log("Practice Code Open and Running");
 // alert("Wow, this is nice when you know what your doing!");
 // alert("Do you feel like your understand alerts and how they work?");
 
-// var userconfirm = confirm("Do you want to remain logged on?");
-// // useconfirm = confirm -Requires input from user in form of clicking cancel or ok.
-// // Both alert and userconfirm remove from screen once an action is taken in box.
+var userconfirm = confirm("Do you want to remain logged on?");
+// useconfirm = confirm -Requires input from user in form of clicking cancel or ok.
+// Both alert and userconfirm remove from screen once an action is taken in box.
 
-// alert ("The user selected: " + userconfirm)
+alert ("The user selected: " + userconfirm)
 // // By adding concatenation(+) to alert and enetring input in this case userconfirm you get a true statement. Boolean -True / False
 
 // var userLunch = prompt("What did you have for lunch today?")
