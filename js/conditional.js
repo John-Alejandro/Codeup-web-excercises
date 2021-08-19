@@ -20,16 +20,20 @@ console.log("It's working")
  * console.logging the function's return value
  */
 function analyzeColor(input) {
-    if (input === "blue") {
-        alert("The ocean appears blue.")
-    } else if (input === "red") {
-        alert("Your garden roses are a vivid red.")
-    } else {
-        alert("I'm not sure what color that is.")
-
+    if (input === "Blue") {
+        return input + " is the color of the ocean when viewed from space.";
+    }   else if ( input === "red") {
+        return " You have beautiful " + input + " roses in your garden.";
+    }   else {
+        return " I don't know anything about " + input + ".";
     }
 }
-console.log("The function analyzeColor returns value.");
+console.log(analyzeColor("Blue"))
+console.log(analyzeColor("red"))
+console.log(analyzeColor("cyan"))
+
+
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -42,33 +46,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-function analyzeColor(input) {
-    if (input === "blue") {
-        alert("The ocean appears blue.")
-    } else if (input === "red") {
-        alert("Your garden roses are a vivid red.")
-    } else {
-        alert("I'm not sure what color that is.")
+console.log(analyzeColor(randomColor))
 
-    }
-}
-console.log("The function analyzeColor returns different values.");
+
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-switch (analyzeColor) {
-    case "blue":
-        alert("The ocean appears blue.");
+switch(analyzeColor()) {
+    case "Blue":
+        alert("is the color of the ocean when viewed from space.");
         break;
     case "red":
-        alert("Your garden roses are a vivid red.");
+        alert("is the color of your rose in your garden.");
         break;
     default:
-        alert("I'm not sure what color that is.");
+        alert(analyzeColor() + " is a color I don't know anything about.");
         break;
 }
-console.log("Switch-case is working");
 /**
  *
  * TODO:
@@ -76,8 +71,9 @@ console.log("Switch-case is working");
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-var analyzeColor = prompt("Pick a color?");
-alert("You picked, " + analyzeColor + " that's a nice color.");
+var userColor = prompt("Pick a color?");
+alert("You picked, " + userColor + " that's a nice color.");
+console.log(analyzeColor(userColor))
 /* ########################################################################## */
 
 /**
