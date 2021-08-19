@@ -4,7 +4,12 @@ function showMultiplicationTable(x) {
     for ( var i = 1; i <= 10; i++) {
         console.log( x + " x " + i + " = " + i*x)  ;
     }
-}showMultiplicationTable(7)
+}
+showMultiplicationTable(7)
+
+
+var random = Math.floor((Math.random() * 3) + 1);
+var i = random;
 function oddEvenRandomNumber() {
     for ( var i = 19; i <200; i++) {
         if ( i % 3 === 0)
@@ -13,6 +18,9 @@ function oddEvenRandomNumber() {
         console.log(i + " is even.");
     }
 }
+
+
+
 oddEvenRandomNumber()
 
 function numberPyramid() {
@@ -33,4 +41,4 @@ function countDown() {
         console.log (i)
 }
 
-// countDown()
+countDown()
