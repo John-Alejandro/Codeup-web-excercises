@@ -102,4 +102,6 @@ var random = Math.floor((Math.random() * 3) + 1);
 function applyDiscount(originalPrice,discountpercent){
     return originalPrice -(originalPrice * discountpercent);
 }
-
+// function isArray(input) {
+//     return Array == 0;
+}
