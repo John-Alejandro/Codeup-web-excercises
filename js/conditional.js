@@ -110,9 +110,12 @@ function calculateTotal(totalAmount,luckyNumber){
         return " You get 35% discount.";
     }   else if ( luckyNumber === 4) {
         return " You get 50% discount.";
-    }   else {
-        return " You whole purchase is free."
-    }
+    }   else if ( luckyNumber === 5) {
+        return " Your whole purchase is free.";
+    }    else {
+        return " No discount";
+        }
+
 
 
 
@@ -127,7 +130,9 @@ function calculateTotal(totalAmount,luckyNumber){
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+var userBill = prompt("What is your total bill?");
+var discount = luckyNumber
 
 /**
  * TODO:
@@ -145,3 +150,12 @@ function calculateTotal(totalAmount,luckyNumber){
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var confirmed = confirm("Would you like to enter a number?");
+       var number = prompt("What is your number ?");
+    if (number % 2 === 0 ) {
+        alert("Your number is even.")
+    }  else  {
+        alert("Your number is odd.")
+    }    alert( number + "100")
+
+
