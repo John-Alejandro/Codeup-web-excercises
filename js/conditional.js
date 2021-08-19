@@ -156,6 +156,6 @@ var confirmed = confirm("Would you like to enter a number?");
         alert("Your number is even.")
     }  else  {
         alert("Your number is odd.")
-    }    alert( number + "100")
+    }    alert( number + parseInt(100))
 
 
