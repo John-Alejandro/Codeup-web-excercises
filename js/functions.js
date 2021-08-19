@@ -8,8 +8,8 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello() {
-    return "Hello!";
+function sayHello(name) {
+    return "Hello!" + name;
 }
 /**
  * TODO:
