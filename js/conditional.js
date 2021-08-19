@@ -95,9 +95,24 @@ console.log(analyzeColor(userColor))
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-function calculateTotal(totalAmount,luckyNumber){
-    return totalAmount - ((totalAmount * luckyNumber)/10);
 
+function calculateTotal(totalAmount,luckyNumber){
+    var discount = totalAmount - ((totalAmount * luckyNumber)/10);
+    return discount;
+    var luckyNumber = userInput
+    if (lucyNumber === 0) {
+        return "No discount";
+    }   else if ( luckyNumber === 1) {
+        return " You get a 10% discount.";
+    }   else if (luckyNumber === 2) {
+        return " You get 25% discount.";
+    }   else if ( luckyNumber === 3) {
+        return " You get 35% discount.";
+    }   else if ( luckyNumber === 4) {
+        return " You get 50% discount.";
+    }   else {
+        return " You whole purchase is free."
+    }
 
 
 
