@@ -30,14 +30,16 @@ var names = ["Xavier","James","Matthew","Ralph"]
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-for(var i=0;i<names.length;i++) {
-    console.log("This is my brother, " + i + " I still have 6 other brothers.");
+for (var i = 0; i < names.length; i += 1); {
+    console.log("This is my brother, " + names[i] + ".");
 }
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
+// names.forEach(function(element,index,names) {
 
+// })
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
