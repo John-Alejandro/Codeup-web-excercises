@@ -30,8 +30,8 @@ var names = ["Xavier","James","Matthew","Ralph"]
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-for (var i = 0; i < names.length; i += 1); {
-    console.log("This is my brother, " + names[i] + ".");
+for (var i = 0; i < names.length; i ++); {
+    console.log("This is my brother, " + i + "." + names[i]);
 }
     /**
      * TODO:
@@ -55,12 +55,15 @@ for (var i = 0; i < names.length; i += 1); {
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-var pets = ["dog","cat","bird","snake","hamster"];
+
+var pets = ["dog","cat","bird","snake","hamster"]
     console.log(pets[0]);
-var friends = ["Jose", "Raymond", "Jesse", "Ann", "Linda"];
+
+ var friends = ["Jose", "Raymond", "Jesse", "Ann", "Linda"]
     console.log(friends[1]);
-var vehicles = ["Oldchevy", "Newchevy", "impala", "olMazda", "newMazda"];
-    console.log(vehicles[-1]);
+
+ var cars = ["Oldchevy", "Newchevy", "impala", "oldMazda", "newMazda"]
+     console.log(cars[-1]);
 
 
 
