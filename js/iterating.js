@@ -37,9 +37,11 @@ for (var i = 0; i < names.length; i += 1); {
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-// names.forEach(function(element,index,names) {
-
-// })
+  names.forEach(function(element,index,names) {
+      console.log(element);
+      console.log(index);
+      console.log(names);
+  })
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
