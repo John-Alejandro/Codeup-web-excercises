@@ -30,7 +30,7 @@ var names = ["Xavier","James","Matthew","Ralph"]
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-for (var i = 0; i < names.length; i ++); {
+for (var i = 0; i < names.length; i += 1); {
     console.log("This is my brother, " + i + "." + names[i]);
 }
     /**
@@ -63,7 +63,7 @@ var pets = ["dog","cat","bird","snake","hamster"]
     console.log(friends[1]);
 
  var cars = ["Oldchevy", "Newchevy", "impala", "oldMazda", "newMazda"]
-     console.log(cars[-1]);
+     console.log(cars[4]);
 
 
 
