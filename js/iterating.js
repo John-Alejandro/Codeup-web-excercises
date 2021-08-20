@@ -55,5 +55,13 @@ for (var i = 0; i < names.length; i += 1); {
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+var pets = ["dog","cat","bird","snake","hamster"];
+    console.log(pets[0]);
+var friends = ["Jose", "Raymond", "Jesse", "Ann", "Linda"];
+    console.log(friends[1]);
+var vehicles = ["Oldchevy", "Newchevy", "impala", "olMazda", "newMazda"];
+    console.log(vehicles[-1]);
+
+
 
 })();
