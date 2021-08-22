@@ -1,4 +1,4 @@
-console.log("planets-String connection test");
+console.log("Planets-String connection test");
 
 (function(){
     "use strict";
