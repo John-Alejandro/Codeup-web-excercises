@@ -27,4 +27,6 @@ console.log("Planets-String connection test");
      * string, and <li> tags around each planet.
      */
 
+    var planetsBreak = ("Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune");
+    console.log("planetsBreak")
 })();
