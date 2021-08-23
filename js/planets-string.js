@@ -30,19 +30,19 @@ console.log("Planets-String connection test");
     var planetsBreak = ("Venus<br>Mercury<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune");
     console.log(planetsBreak);
 
-    var planetsList = ("git branch
-
-    <ul>
-        <li>Mercury</li>
-        <li>Venus</li>
-        <li>Earth</li>
-        <li>Mars</li>
-        <li>Jupiter</li>
-        <li>Saturn</li>
-        <li>Uranus</li>
-        <li>Neptune</li>
-    </ul>
-");
-    console.log(planetsList);
+//     var planetsList = (
+//
+//     <ul>
+//         <li>Mercury</li>
+//         <li>Venus</li>
+//         <li>Earth</li>
+//         <li>Mars</li>
+//         <li>Jupiter</li>
+//         <li>Saturn</li>
+//         <li>Uranus</li>
+//         <li>Neptune</li>
+//     </ul>
+// ");
+//     console.log(planetsList);
 
 })();
