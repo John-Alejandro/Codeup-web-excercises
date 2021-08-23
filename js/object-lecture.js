@@ -64,8 +64,8 @@ var myCar = {};
 
 
 myCar = {
-    make: Chevy,
-    model: Silverado,
+    make: "Chevy",
+    model: "Silverado",
     year: 2009
 }
 //For me? I'm missing the year for myCar so. .
@@ -84,7 +84,7 @@ myCar = {
 //We can use dot notation or array notation in similar ways to start accessing these properties
 
 //Let's share some information about our cars :)
-    
+
 
 //We can tap into our prior understanding of assigning variables thus far and assign a property to a variable:
 
@@ -94,6 +94,7 @@ myCar = {
 //Now we could do something like this. . a list of those features in the console
 
 // TODO: Add an array of features that your vehicle has!
+myCar.features = ["power windows", "ABS brakes", "backup camera"];
 
 //I already added an array of features above in the lecture, so I'm good to go.
 
@@ -102,9 +103,22 @@ myCar = {
 
 // TODO: Nest a 'carOwner' object of your own into this growing myCar object and console.log the results!
 
+
+var carOwner = {
+    firstName: "John",
+    lastName: "Alejandro",
+    age: 51,
+    zipCode: 78223,
+    contactInfo: {
+        contactType: "mobile",
+        phoneNumber: 2108657678
+    }
+}
 //An object can also contain within itself a method (function). We can set it up similarly to our properties, but with a value that is the function expression
 
+myCar.owner = carOwner;
 
+console.log(myCar);
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                 Arrays of Objects               *
@@ -113,8 +127,22 @@ myCar = {
 
 //Let's tie some things together: Let's make a garage with another car!
 
+
 //Now: loop through an ARRAY of OBJECTS, accessing our turnOn function for our vehicles
 //Also note: we used the keyword *this* on the other vehicle's turnOn function, so this will be a good experiment to see the results
 
 
 //One final TODO: A bigger task - set up your own garage and add at least another vehicle into it. Log your garage array to verify it contains the cars you want - once your garage has the right cars, write a loop to access some properties or a method from them!
+
+
+var wifeCar = {
+    make: "Mazda",
+    model: "Mazda 3",
+    year: 2018
+}
+
+var myGarage = ["Contains " : + myCar + wifeCar];
+
+var turnOn  = function() {
+    alert("Turn on my car with remote start.");
+};
