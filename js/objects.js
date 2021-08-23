@@ -66,7 +66,9 @@ function HEBoffer(Discount,amount) {
    }
 }
 
-console.log(HEBoffer(.12,100))
+    console.log("this is ken testing");
+
+    console.log(HEBoffer(.12,100))
 console.log()
     var shoppers = [
         {name: 'Cameron', amount: 180},
