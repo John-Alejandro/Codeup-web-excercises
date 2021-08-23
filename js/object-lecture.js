@@ -145,4 +145,4 @@ var myGarage = ["Contains " : + myCar + wifeCar];
 
 var turnOn  = function() {
     alert("Turn on my car with remote start.");
-};
+}

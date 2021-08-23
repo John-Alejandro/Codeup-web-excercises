@@ -30,6 +30,11 @@ var person = {
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+// var sayHello  = function() {
+//         alert("Hello from " + person.firstName + person.lastName );
+// }
+//
+// console.log(person.sayHello())
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -45,11 +50,29 @@ var person = {
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+function HEBoffer(Discount,amount) {
+    var finalReceipt = amount-(amountt * Discount);
+    return finalReceipt;
+   switch (totalReceipt) {
+       case 180:
+           finalReceipt = totalReceipt;
+           break;
+       case 250:
+           finalReceipt = totalReceipt-(amount * Discount);
+           break;
+       case 320:
+           finalReceipt = totalReceipt-(totalReceipt * Discount);
+           break;
+   }
+}
+
+console.log(HEBoffer(.12,100))
+console.log()
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
