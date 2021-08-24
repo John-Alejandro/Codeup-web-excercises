@@ -30,11 +30,14 @@ var person = {
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-// var sayHello  = function() {
-//         alert("Hello from " + person.firstName + person.lastName );
-// }
-//
-// console.log(person.sayHello())
+function sayHello(name) {
+        return("Hello From " + name);
+}
+    sayHello(name);
+    var helloMessage = "Hello, " + name;
+
+console.log(sayHello(person.firstName +  " " + person.lastName + "!"))
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -51,7 +54,7 @@ var person = {
      */
 
 function HEBoffer(Discount,amount) {
-    var finalReceipt = amount-(amountt * Discount);
+    var finalReceipt = amount-(amount * Discount);
     return finalReceipt;
    switch (totalReceipt) {
        case 180:
