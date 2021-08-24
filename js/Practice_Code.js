@@ -1,18 +1,18 @@
 "use strict";
 console.log("Practice Code Open and Running");
 
-// console.log("Hello from Practice Code JS!");
-// var myStr =45;
+console.log("Hello from Practice Code JS!");
+var myStr =45;
 // only numbers work in var, no symbols or letters. Show up as undefined.
 
-// console.log(myStr)
+console.log(myStr)
 // console.log will return whatever you type in in quotes as well as any input or stated var or defined item
 
-// var howmanyPets =2;
-// console.log(howmanyPets)
+var howmanyPets =2;
+console.log(howmanyPets)
 
-// alert("Wow, this is nice when you know what your doing!");
-// alert("Do you feel like your understand alerts and how they work?");
+alert("Wow, this is nice when you know what your doing!");
+alert("Do you feel like your understand alerts and how they work?");
 
 var userconfirm = confirm("Do you want to remain logged on?");
 // useconfirm = confirm -Requires input from user in form of clicking cancel or ok.
@@ -103,5 +103,4 @@ function applyDiscount(originalPrice,discountpercent){
     return originalPrice -(originalPrice * discountpercent);
 }
 // function isArray(input) {
-//     return Array == 0;
-}
+//     return Array == 0;}
