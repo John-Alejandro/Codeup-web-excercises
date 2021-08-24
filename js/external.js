@@ -49,3 +49,5 @@ var custReply = prompt("If you buy 2 or more items, I can apply the offer? Are y
 console.log(custReply);
 var Custreply = prompt("Would you like to become a Premium member? Their are no minimum purchase requirements.");
 console.log(Custreply);
+
+
