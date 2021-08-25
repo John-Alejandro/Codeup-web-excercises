@@ -96,31 +96,35 @@ console.log(analyzeColor(userColor))
  * return value.
  */
 
-function calculateTotal(totalAmount,luckyNumber){
-    var discount = totalAmount - ((totalAmount * luckyNumber)/10);
-    return discount;
-    var luckyNumber = userInput
-    if (lucyNumber === 0) {
-        return "No discount";
-    }   else if ( luckyNumber === 1) {
-        return " You get a 10% discount.";
-    }   else if (luckyNumber === 2) {
-        return " You get 25% discount.";
-    }   else if ( luckyNumber === 3) {
-        return " You get 35% discount.";
-    }   else if ( luckyNumber === 4) {
-        return " You get 50% discount.";
-    }   else if ( luckyNumber === 5) {
-        return " Your whole purchase is free.";
-    }    else {
-        return " No discount";
-        }
+function calculateTotal(luckyNumber,totalAmount) {
+    var finalPrice;
 
-
-
-
-
+    switch (luckyNumber) {
+        case 0:
+            finalPrice = totalAmount - totalAmount * 0;
+            break;
+        case 1:
+            finalPrice = totalAmount - totalAmount * .10;
+            break;
+        case 2:
+            finalPrice = totalAmount - totalAmount * .25;
+            break;
+        case 3:
+            finalPrice = totalAmount - totalAmount * .35;
+            break;
+        case 4:
+            finalPrice = totalAmount - totalAmount * .50;
+            break;
+        case 5:
+            finalPrice = totalAmount - totalAmount * 1.0;
+            break;
+    }
+    return finalPrice;
 }
+console.log(calculateTotal(0,100));
+console.log(calculateTotal(5,100));
+console.log(calculateTotal(3,100));
+
 
 /**
  * TODO:
@@ -132,7 +136,10 @@ function calculateTotal(totalAmount,luckyNumber){
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 var userBill = prompt("What is your total bill?");
-var discount = luckyNumber
+var finalPrice = calculateTotal(luckyNumber,userBill)
+    alert("Your lucky number is " + luckyNumber);
+    alert("Your bill before your discount was $" + userBill);
+    alert("Your new bill with discount applied is $" + finalPrice);
 
 /**
  * TODO:
@@ -156,6 +163,6 @@ var confirmed = confirm("Would you like to enter a number?");
         alert("Your number is even.")
     }  else  {
         alert("Your number is odd.")
-    }    alert( number + parseInt(100))
+    }    alert(parseInt(number) + 100 + " is your number plus 100.")
 
 
