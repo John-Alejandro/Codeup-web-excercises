@@ -96,9 +96,10 @@ var books = [
             title: "Raiders of the Lost Java",
             title: "The Big Code"
         }
+]
 
-
-
+var author = [
+    {
         firstName: "Jack",
         lastName: " Ryan",
         firstName: "Johnny",
