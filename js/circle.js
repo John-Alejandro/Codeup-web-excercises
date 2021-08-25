@@ -2,14 +2,14 @@
 //     "use strict";
 //
 //     create a circle object
-//     var circle = {
-//         radius: 3,
-
-        // getArea: function () {
+    var circle = {
+        radius: 3,
+}
+        getArea: function areaOfCircle(circle) {
 //             // TODO: complete this method
 //             // hint: area = pi * radius^2
-function getArea(num) {
-    return Math.round(Math.PI * (num * num));
+
+            return Math.PI * (circle.radius * circle.radius);
 }
 //             return; // TODO: return the proper value
 
