@@ -51,24 +51,24 @@ console.log(sayHello(person.firstName +  " " + person.lastName + "!"))
      */
 
 function HEBoffer(Discount,amount) {
-    var finalReceipt = amount-(amount * Discount);
-    return finalReceipt;
-   switch (totalReceipt) {
-       case 180:
-           finalReceipt = totalReceipt;
-           break;
-       case 250:
-           finalReceipt = totalReceipt-(amount * Discount);
-           break;
-       case 320:
-           finalReceipt = totalReceipt-(totalReceipt * Discount);
-           break;
-   }
+        var finalReceipt;
+
+        switch (totalReceipt) {
+            case 180:
+                finalReceipt = totalReceipt;
+                break;
+            case 250:
+                finalReceipt = totalReceipt - (amount * Discount);
+                break;
+            case 320:
+                finalReceipt = totalReceipt - (totalReceipt * Discount);
+                break;
+        }
+        return finalReceipt;
 }
 
 
-
-    console.log(HEBoffer(.12,100))
+    // console.log(HEBoffer(.12,100))
 console.log()
     var shoppers = [
         {name: 'Cameron', amount: 180},
@@ -88,7 +88,32 @@ console.log()
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+var books = [
+        {
+            title: "Art of Coding",
+            title: "Gone With the Coding",
+            title: "Code Wars",
+            title: "Raiders of the Lost Java",
+            title: "The Big Code"
+        }
 
+
+
+        firstName: "Jack",
+        lastName: " Ryan",
+        firstName: "Johnny",
+        lastName: "Cat",
+        firstName: "Annie",
+        lastName: "Wits",
+        firstName: "Amelia",
+        lastName: "EarHeart",
+        firstName: "Enzo",
+        lastName: "Ferrari"
+    }
+]
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
     /**
      * TODO:
      * Loop through the books array and output the following information about

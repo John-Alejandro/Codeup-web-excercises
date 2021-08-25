@@ -12,11 +12,13 @@
             return Math.PI * (circle.radius * circle.radius);
 }
 //             return; // TODO: return the proper value
+            console.log("The area of this circle is " + areaOfCircle(circle) + ".")
 
 //
 //         logInfo: function (doRounding) {
 //             // TODO: complete this method.
-//
+
+
 //             // If doRounding is true, round the result to the nearest integer.
 //             // Otherwise, output the complete value
 //
