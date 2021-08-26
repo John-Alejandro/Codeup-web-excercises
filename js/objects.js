@@ -91,27 +91,37 @@ console.log()
 var books = [
         {
             title: "Art of Coding",
+            author: {
+                firstName: "Jack",
+                lastName: "Ryan"
+            }
+        },   {
             title: "Gone With the Coding",
+            author: {
+                firstName: "Johnny",
+                lastName: "Cat"
+            }
+        }, {
             title: "Code Wars",
+            author: {
+                firstName: "Annie",
+                lastName: "Wits",
+            }
+        }, {
             title: "Raiders of the Lost Java",
-            title: "The Big Code"
+            author: {
+                firstName: "Amelia",
+                lastName: "EarHeart",
+            }
+        },  {
+            title: "The Big Code",
+            author: {
+                firstName: "Enzo",
+                lastName: "Ferrari",
+            }
         }
 ]
 
-var author = [
-    {
-        firstName: "Jack",
-        lastName: " Ryan",
-        firstName: "Johnny",
-        lastName: "Cat",
-        firstName: "Annie",
-        lastName: "Wits",
-        firstName: "Amelia",
-        lastName: "EarHeart",
-        firstName: "Enzo",
-        lastName: "Ferrari"
-    }
-]
     console.log(books[0].title)
     console.log(books[0].author.firstName)
     console.log(books[0].author.lastName)
