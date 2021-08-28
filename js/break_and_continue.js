@@ -15,3 +15,13 @@ var PickoddNumber  = prompt("Pick an odd number between 1 and 50?");
 
 
 //     Use a loop and the continue statement to output all the odd numbers between 1 and 50, except for the number the user entered.
+
+
+for (var i =1; i<= 5; i +=1) {
+    if (i === PickoddNumber) {
+        var PickoddNumber = prompt("Whatever odd number you pick between 1 and 50. I will skip it.")
+        console.log("Skipping your number, " + PickoddNUmber);
+        continue;
+
+    }
+}
