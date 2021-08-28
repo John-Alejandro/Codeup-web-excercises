@@ -23,7 +23,7 @@ function oddEvenRandomNumber() {
         console.log(i + " is even.");
     }
 }
-
+// Not complete, still need to reduce to only 10 results.
 
 
 oddEvenRandomNumber()
