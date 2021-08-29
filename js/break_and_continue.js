@@ -25,5 +25,6 @@ function PickoddNumber() {
             continue;
 
         }
+        console.log("Here is an odd number: " + i);
     }
 }
