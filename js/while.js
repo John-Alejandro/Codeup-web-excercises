@@ -44,8 +44,19 @@ Math.floor(Math.random() * 5) + 1;
 // Yay! I sold them all! // If there are no more cones
 
 var allCones = Math.floor(Math.random() * 50) + 50;
-var purchsedCones;
+var purchsedCones = Number(purchasedCones);
 
 do {
-  purchasedCones = prompt("I have " + allCones + " cones left. How many do you want?");
+    purchasedCones = prompt("I have " + allCones + " cones left. How many do you want?");
+    if (userCones < purchasedCones) {
+        alert("I do not have " + allCones + "cones. I can sell you " + purchasedCones);
+        continue;
+    }
+    if (userCones > purchsedCones) {
+        alert("Here are your " + purchasedCones + "cones.");
+        continue;
+    }
+    userCones === puchasedCones;
+    While (allCones > 0);
+    alert(" All done for the day. I sold out.");
 }
