@@ -50,26 +50,36 @@ console.log(sayHello(person.firstName +  " " + person.lastName + "!"))
      * and console.log the relevant messages for each person
      */
 
-function HEBoffer(Discount,amount) {
-        var finalReceipt;
-
-        switch (totalReceipt) {
-            case 180:
-                finalReceipt = totalReceipt;
-                break;
-            case 250:
-                finalReceipt = totalReceipt - (amount * Discount);
-                break;
-            case 320:
-                finalReceipt = totalReceipt - (totalReceipt * Discount);
-                break;
-        }
+function HEBoffer(shopper) {
+        var finalReceipt = shopper.amount - shopper.amount * .12;
         return finalReceipt;
-}
+    }
+    shoppers.forEach(function(shopper) {
+        if (shopper.amount >= 200) {
+            var pay = finalReceipt(shopper);
+            console.log("Name: " + shopper.name + ", Original amount: " + shopper.amount + ", discount: 12%, Amount after discount: " + pay + ".");
+        }   else {
+            console.log("Name: " + shopper.name + ", Original amount: " + shopper.amount + ", No discount.");
+        }
+});
+//         switch (totalReceipt) {
+//             case 180:
+//                 finalReceipt = totalReceipt;
+//                 break;
+//             case 250:
+//                 finalReceipt = totalReceipt - (amount * Discount);
+//                 break;
+//             case 320:
+//                 finalReceipt = totalReceipt - (totalReceipt * Discount);
+//                 break;
+//         }
+//         return finalReceipt;
+// }
+
 
 
     // console.log(HEBoffer(.12,100))
-console.log()
+// console.log()
     var shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
@@ -161,7 +171,7 @@ var books = [
      *   `showBookInfo` function.
      */
 
-})();
+}()
 // Create a function named rollSixSided that takes in a number as a parameter. Write code within your function that would generate the number between 1 and 6 [the dice] and then console.log the result to the user. Your loop should run the number of times as specified by the argument provided.
 //     Example:
 // rollSixSided(10)
@@ -192,3 +202,4 @@ var books = [
 // console.log(rollSixSided())
 //
 
+);
