@@ -13,7 +13,7 @@ console.log("Planets-String connection test");
      * console.log planetsArray to check your work
      */
 
-    var planetsArray = planetsString.split(" ");
+    var planetsArray = planetsString.split(" | ");
     console.log(planetsArray);
 
     /**
@@ -27,8 +27,8 @@ console.log("Planets-String connection test");
      * string, and <li> tags around each planet.
      */
 
-    var planetsBreak = ("Venus<br>Mercury<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune");
-    console.log(planetsBreak);
+    // var planetsBreak = ("Venus<br>Mercury<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune");
+    // console.log(planetsBreak);
 
 //     var planetsList = (
 //
@@ -44,5 +44,10 @@ console.log("Planets-String connection test");
 //     </ul>
 // ");
 //     console.log(planetsList);
+//
 
+// Solution from review to compare my solution.
+var planetsWithBrs = planetsArray.join("<br>");
+var planetsHTML = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>";
+        console.log(planetsHTML);
 })();
