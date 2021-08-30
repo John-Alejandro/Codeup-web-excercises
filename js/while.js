@@ -36,7 +36,7 @@ while (number < 65536)  {
 // This is how you get a random number between 50 and 100
 
 // This expression will generate a random number between 1 and 5
-Math.floor(Math.random() * 5) + 1;
+
 // The output should be similar to the following:
 
 //     5 cones sold...  // if there are enough cones
@@ -44,19 +44,16 @@ Math.floor(Math.random() * 5) + 1;
 // Yay! I sold them all! // If there are no more cones
 
 var allCones = Math.floor(Math.random() * 50) + 50;
-var purchsedCones = Number(purchasedCones);
+var purchasedCones = Math.floor(Math.random() * 5) + 1;
 
 do {
-    purchasedCones = prompt("I have " + allCones + " cones left. How many do you want?");
-    if (userCones < purchasedCones) {
-        alert("I do not have " + allCones + "cones. I can sell you " + purchasedCones);
-        continue;
+    // purchasedCones = prompt("I have " + allCones + " cones left. How many do you want?");
+    if (allCones < purchasedCones) {
+        console.log("I do not have " + allCones + " cones. I  sell you " + purchasedCones);
+    } else {
+        (allCones > purchasedCones)
+        console.log("Here are your " + purchasedCones + " cones.");
     }
-    if (userCones > purchsedCones) {
-        alert("Here are your " + purchasedCones + "cones.");
-        continue;
-    }
-    userCones === puchasedCones;
-    While (allCones > 0);
-    alert(" All done for the day. I sold out.");
-}
+}   while (allCones > 0);
+    console.log(" All done for the day. I sold out.");
+
