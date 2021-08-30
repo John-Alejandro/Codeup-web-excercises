@@ -33,7 +33,7 @@ var names = ["Xavier","James","Matthew","Ralph"]
 
 
 for (var i = 0; i < names.length; i++); {
-    console.log("This is my brother, " + names[i] + ".");
+    console.log("This is my brother, " + names.length i + ".");
 }
     //Still have issue with completing this question. It will not loop through array.
     /**
@@ -66,9 +66,14 @@ var pets = ["dog","cat","bird","snake","hamster"]
     console.log(friends[1]);
 
  var cars = ["Oldchevy", "Newchevy", "impala", "oldMazda", "newMazda"]
-     console.log(cars[4]);
+     console.log(cars[cars.length -1]);
 
-
+var first = [1,2,3,4,5]
+    console.log(first[0]);
+var second = [1,2,3,4,5]
+    console.log(second[1]);
+var last = [1,2,3,4,5]
+    console.log(last[last.length-1]);
 
 })();
 
