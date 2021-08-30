@@ -30,8 +30,8 @@ var names = ["Xavier","James","Matthew","Ralph"]
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-for (var i = 0; i < names.length -1; i += 1); {
-    console.log("This is my brother, " + names[3] + ".");
+for (var i = 0; i < names.length; i++); {
+    console.log("This is my brother, " + names[i] + ".");
 }
     /**
      * TODO:
