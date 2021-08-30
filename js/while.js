@@ -43,17 +43,17 @@ while (number < 65536)  {
 // Cannot sell you 6 cones I only have 3...  // If there are not enough cones
 // Yay! I sold them all! // If there are no more cones
 
-var allCones = Math.floor(Math.random() * 50) + 50;
-var purchasedCones = Math.floor(Math.random() * 5) + 1;
+var allCones = Math.floor(Math.random() * 20) + 20;
+var purchasedCones = Math.floor(Math.random() * 40) + 1;
 
 do {
-    // purchasedCones = prompt("I have " + allCones + " cones left. How many do you want?");
-    if (allCones < purchasedCones) {
-        console.log("I do not have " + allCones + " cones. I  sell you " + purchasedCones);
+    // purchasedCones = prompt("I have " + allCones + " cones. How many do you want?");
+    if (allCones > purchasedCones) {
+        console.log("I cannot sell you " + allCones + " cones. I only have " + purchasedCones + " left.");
     } else {
-        (allCones > purchasedCones)
+        (allCones < purchasedCones)
         console.log("Here are your " + purchasedCones + " cones.");
     }
-}   while (allCones > 0);
+}   while (allCones <= 0);
     console.log(" All done for the day. I sold out.");
 
