@@ -7,43 +7,51 @@
 <body>
     <h1>Veridian Dynamics Registration Form</h1>
 <form method="POST" action="https://hookb.in/QJGYoeMMW7s8mNzzmq7m">
-    <label for="username">Username</label>
-    <input id="username" name="username" type="text">
+    <label for="email_registration">Username</label>
+    <input id="email_registration" name="email_registration" placeholder="exampleeamail@codeup.com">
     <br><br>
 
     <label for="password">Password</label>
     <input id="password" name="password" type="password">
     <br><br>
 
-    <p>Bio</p>
-    <label>
-        <textarea name="bio"></textarea>
+    <label for="bio">Bio</label>
 
-    </label>
-    <br><br>
+        <textarea name="bio" id="bio" placeholder="Tell us about yourself "></textarea>
+    <br>
+    <br>
+    <section>
+        <h5>How did you hear about Us?</h5>
 
-    <p>How did you hear about Us?</p>
-    <label for="Billboard">Billboard</label>
-    <input type="radio" id="Billboard" name="Hear-1" value="Billboard"><br>
-    <label for="Radio advertisement">Radio advertisement</label>
-    <input type="radio" id="Radio advertisement" name="Hear-1" value="Radio advertisement"><br>
-    <label for="Internet advertisement">Internet advertisement</label>
-    <input type="radio" id="Internet advertisement" name="Hear-1" value="Internet advertisement"><br>
-    <label for="Other">Other</label>
-    <input type="radio" id="Other" name="Hear-1" value="Other"><br><br>
-<!--Rework dropdown box after review-->
+        <label for="Billboard">Billboard</label>
+        <input type="radio" id="Billboard" name="Hear-1" value="Billboard">
+        <br>
+        <label for="Radio advertisement">Radio advertisement</label>
+        <input type="radio" id="Radio advertisement" name="Hear-1" value="Radio advertisement">
+        <br>
+        <label for="Internet advertisement">Internet advertisement</label>
+        <input type="radio" id="Internet advertisement" name="Hear-1" value="Internet advertisement">
+        <br>
+        <label for="Other">Other</label>
+        <input type="radio" id="Other" name="Hear-1" value="Other">
+    </section>
+    <br>
+    <section>
+         <label for="webBrowser-select">What web browser are you using?></label>
+            <select name=webBrowsers" id="webBrowser-select">
+                <option value="" disabled selected>--Please choose an option--</option>
+                <option value="google chrome">Google Chrome</option>
+                <option value="safari">Safari</option>
+                <option value="firefox">Firefox</option>
+                <option value="internet Explorer">Internet Explorer</option>
+                <option value="other">Other</option>
+            </select>
+    </section>
 
-    <div class="dropdown">
-        <label>What web browser are you using?</label>
-        <button class="dropbtn">Press to select browser:</button>
-        <div  id="myDropdown" class="dropdown-content">
-            <a href="#">google</a><br>
-            <a href="#">yahoo</a><br>
-            <a href="#">firefox</a><br><br>
-        </div>
-    </div>
+    <br>
+<!--<input type="Submit" value=Register">-->
+    <button type="submit">Register</button>
 
-    <input type="Submit">
 </form>
 </body>
 </html>
