@@ -99,4 +99,17 @@ alert("Thank you so much, here's your tip " + "$" + usertip + ".");
 function applyDiscount(originalprice,discountPercent) {
     var discount = originalprice-(originalprice * discountPercent);
     return discount;
+
+
+
+
 }
+function tellfortune(c,s,j,C) {
+    var c = Math.random(c);
+    var s = ;
+    var j = random.job
+    var C = random.city
+    console.log( "You have "+ c + "children are " + s + " and work as a " + j +  " in " + C ".");
+}
+    //Did not need a return can just console.log!!1
+    console.log(tellfortune())
