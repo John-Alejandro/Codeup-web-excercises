@@ -104,12 +104,18 @@ function applyDiscount(originalprice,discountPercent) {
 
 
 }
-function tellfortune(c,s,j,C) {
-    var c = Math.random(c);
-    var s = ;
-    var j = random.job
-    var C = random.city
-    console.log( "You have "+ c + "children are " + s + " and work as a " + j +  " in " + C ".");
+// function tellfortune(c,s,j,C) {
+//     var c = Math.random(c);
+//     var s = ;
+//     var j = random.job
+//     var C = random.city
+//     console.log( "You have "+ c + "children are " + s + " and work as a " + j +  " in " + C ".");
+// }
+//     //Did not need a return can just console.log!!1
+//     console.log(tellfortune())
+//
+
+function calculateDogAge(input) {
+    var DogAge = (input * 7);
+    return " Your dog is " + DogAge + "years old in dog years.";
 }
-    //Did not need a return can just console.log!!1
-    console.log(tellfortune())
