@@ -115,7 +115,7 @@ function applyDiscount(originalprice,discountPercent) {
 //     console.log(tellfortune())
 //
 
-function calculateDogAge(input) {
-    var DogAge = (input * 7);
-    return " Your dog is " + DogAge + "years old in dog years.";
+function calculateDogAge(input,conversionNum) {
+    var dogAge = input * conversionNum;
+    return " Your dog is " + input + "years old in dog years. Types " + conversionNum ;
 }
