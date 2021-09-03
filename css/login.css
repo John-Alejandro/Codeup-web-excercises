@@ -38,9 +38,9 @@ fieldset {
 
 .form-group {
     width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    content: 5em;
     box-sizing: border-box;
+    /*box-sizing: border-box;*/
     /* This element must use 100% of the width */
     /* It should have a separation of .5em from elements on top of it and below it*/
 }
