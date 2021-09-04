@@ -7,18 +7,26 @@ body, html {
 }
 .message {
     margin-bottom: 30px;
-    border: 20px solid;
+    border: 25px solid;
+    border-radius: 10px;
 }
 .message-info {
-    border-color: deepskyblue;
-    text-decoration #0a0a82: blue;
+    border-color: lightskyblue;
+    color: blue;
+
 }
 .message-success {
-    border-color: green;
+    border-color: lightgreen;
+    color: green;
 }
 .message-warning {
-    border-color: yellow;
+    border-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
 }
 .message-error {
     border-color: lightpink;
+}
+div {
+    text-decoration-color: blue;
+    color: red;
 }
