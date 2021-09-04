@@ -13,17 +13,17 @@ body, html {
 }
 .message-info {
     border-color: lightskyblue;
-    color: blue;
+    background-color: lightskyblue;
 }
 .message-success {
     border-color: lightgreen;
-    color: green;
+    background-color: lightgreen;
 }
 .message-warning {
     border-color: lightgoldenrodyellow;
-    color: darkgoldenrod;
+    background-color: lightgoldenrodyellow;
 }
 .message-error {
     border-color: lightpink;
-    color: red;
+    background-color: lightpink;
 }
