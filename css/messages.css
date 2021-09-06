@@ -14,16 +14,20 @@ body, html {
 .message-info {
     border-color: lightskyblue;
     background-color: lightskyblue;
+    color: darkblue;
 }
 .message-success {
     border-color: lightgreen;
     background-color: lightgreen;
+    color: darkgreen;
 }
 .message-warning {
     border-color: lightgoldenrodyellow;
     background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
 }
 .message-error {
     border-color: lightpink;
     background-color: lightpink;
+    color: darkred;
 }
