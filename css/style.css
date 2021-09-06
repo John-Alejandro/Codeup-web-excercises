@@ -4,8 +4,8 @@
 }
 
 h2 {
-    color: yellow ;
-    text-decoration: underline;
+    color: mediumblue ;
+    text-decoration: seashell;
 }
 
 body {
@@ -14,12 +14,43 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    font-family:'Orbitron', sans-serif;
 }
 
 body:hover {
     background-color: gold;
     background-image: url(../img/img_5.png);
-    background-size: 25%;
+    background-size: 15%;
     background-repeat: repeat;
+    background-position: center;
 }
 
+ul li {
+    list-style: circle;
+    color: gold;
+    text-decoration-thickness: auto;
+}
+
+ol li {
+    list-style-type: upper-roman;
+    color: orange;
+}
+
+table  {
+    color: lawngreen;
+    border-collapse: collapse;
+    background-color: darkred;
+    font-weight: lighter;
+}
+a:link {
+    background-color: purple;
+}
+a:visited {
+    background-color: gold;
+}
+a:hover {
+    background-color: green;
+}
+a:active {
+    background-color: red;
+}
