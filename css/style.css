@@ -1,18 +1,25 @@
 .fancy-header {
-    color: blue;
+    color: gold;
     text-align: center;
 }
 
 h2 {
-    color: coral;
+    color: yellow ;
     text-decoration: underline;
 }
 
 body {
     background-color: gold;
     background-image: url(../img/pexels-pixabay-73873.jpeg);
-    max-width: 100%;
-    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+body:hover {
+    background-color: gold;
+    background-image: url(../img/img_5.png);
+    background-size: 25%;
+    background-repeat: repeat;
+}
 
