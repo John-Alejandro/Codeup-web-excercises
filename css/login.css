@@ -38,8 +38,8 @@ fieldset {
 
 .form-group {
     width: 100%;
-    content: 5em;
-    box-sizing: border-box;
+    margin:.5em 0;
+    /*box-sizing: border-box;*/
     /*box-sizing: border-box;*/
     /* This element must use 100% of the width */
     /* It should have a separation of .5em from elements on top of it and below it*/
@@ -56,21 +56,21 @@ fieldset {
 }
 
 .btn {
+    background-color: #0fb784;
     padding: 8px;
     text-decoration-color: white;
     font-weight: bold;
     color: white;
-    border: 1px lightgrey;
+    border: 1px solid lightgrey;
     /* There must be a separation of 8px between the text and the border of this element */
     /* The text color of this element should be white and bold */
     /* The border of this element should be 1px, and its color should be light grey */
-    background-color: #0fb784;
+
 }
 
 .form-control {
-    margin: 4px;
-    /*padding: 5em;*/
-    box-sizing: border-box;
+
+    /*box-sizing: border-box;*/
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
 
@@ -78,7 +78,11 @@ fieldset {
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: calc(100% - 8px);
+    margin: 4px 0;
+    padding: 5em 0;
+    width: calc(100% - 2px);
+/*    Was off by 4px in calc */
+/*    Did not have second set of numbers on margin and padding*/
 }
 
 
