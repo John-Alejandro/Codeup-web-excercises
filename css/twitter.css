@@ -75,8 +75,44 @@ a {
 }
 .profile-image {
     position: absolute;
+    top: 310px;
 }
 .profile-form {
 
+}
 
+.profile-details {
+    float: left;
+    margin: 0 .5em;
+    width: calc(100% - 25%);
+}
+.timeline {
+    float: right;
+    margin: 0 .5em;
+    width: calc(100% - 50%);
+}
+.who-to-follow {
+    float: right;
+    margin: 0 .5em;
+    width: calc(100% - 25%);
+}
+.container {
+    margin: 2em;
+}
+.media {
+    width: 100%;
+    --light-bg: #FFF;
+    border-bottom: 1px;
+    --separator-color: #DDD;
+    padding: .5em;
+    overflow: auto;
+}
+.media-image {
+    width: 50%;
+    margin: 1.33em 0;
+    float: right;
+}
+.media-body {
+    width: 100%;
+    float: right;
 }
