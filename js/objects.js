@@ -50,11 +50,11 @@ console.log(sayHello(person.firstName +  " " + person.lastName + "!"))
      * and console.log the relevant messages for each person
      */
 
-function HEBoffer(shopper) {
+function HEBoffer(shopper,amount) {
         var finalReceipt = shopper.amount - shopper.amount * .12;
         return finalReceipt;
     }
-    shoppers.forEach(function(shopper) {
+    shoppers.forEach(function(shoppers) {
         if (shopper.amount >= 200) {
             var pay = finalReceipt(shopper);
             console.log("Name: " + shopper.name + ", Original amount: " + shopper.amount + ", discount: 12%, Amount after discount: " + pay + ".");
@@ -159,7 +159,11 @@ var books = [
      *      ---
      *      ...
      */
-
+books.forEach(function(book,index) {
+    console.log("Book # " + (index + 1));
+    console.log("Title: " + book.title);
+    console.log("Author: " book.author.firstName + " " + book.author.lastName);
+})
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
