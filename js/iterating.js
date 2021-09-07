@@ -32,7 +32,7 @@ var names = ["Xavier","James","Matthew","Ralph"]
      */
 
 
-for (var i = 0; i < names[names.length]; i++); {
+for (var i = 0; i < names.length; i++) {
     console.log("This is my brother, " + names[i] + ".");
 }
     //Still have issue with completing this question. It will not loop through array.
