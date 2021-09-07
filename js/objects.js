@@ -50,13 +50,20 @@ console.log(sayHello(person.firstName +  " " + person.lastName + "!"))
      * and console.log the relevant messages for each person
      */
 
-function HEBoffer(shopper,amount) {
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+function HEBoffer(shopper) {
         var finalReceipt = shopper.amount - shopper.amount * .12;
         return finalReceipt;
     }
-    shoppers.forEach(function(shoppers) {
+
+    shoppers.forEach(function(shopper) {
         if (shopper.amount >= 200) {
-            var pay = finalReceipt(shopper);
+            var pay = HEBoffer(shopper);
             console.log("Name: " + shopper.name + ", Original amount: " + shopper.amount + ", discount: 12%, Amount after discount: " + pay + ".");
         }   else {
             console.log("Name: " + shopper.name + ", Original amount: " + shopper.amount + ", No discount.");
@@ -80,11 +87,7 @@ function HEBoffer(shopper,amount) {
 
     // console.log(HEBoffer(.12,100))
 // console.log()
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -162,8 +165,8 @@ var books = [
 books.forEach(function(book,index) {
     console.log("Book # " + (index + 1));
     console.log("Title: " + book.title);
-    console.log("Author: " book.author.firstName + " " + book.author.lastName);
-})
+    console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+});
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
