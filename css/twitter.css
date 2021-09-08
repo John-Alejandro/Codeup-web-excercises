@@ -27,7 +27,6 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
-    z-index: 1000;
 }
 .nav {
     list-style-type: none;
@@ -44,7 +43,6 @@ a {
 }
 .profile {
     background: var(--light-bg);
-    height: 80px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -74,52 +72,78 @@ a {
     display: inline-block;
     padding: 1.5em;
 }
+
+.top-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
 .profile-image {
     position: absolute;
     top: 310px;
 }
+
+.profile {
+    height: 80px;
+}
+
 .profile-form {
     float: right;
-    line-height: 5em;
+    line-height: 80px;
 }
+
 .profile-details {
     float: left;
     margin: 0 .5em;
-    width: calc(100% - 75%);
+    /*width: calc(100% - 75%);*/
+    width: calc(25% - 1em);
 }
+
 .timeline {
     float: left;
     margin: 0 .5em;
-    width: calc(100% - 60%);
+    /*width: calc(100% - 60%);*/
+    width: calc(50% - 1em);
 }
+
 .who-to-follow {
     float: right;
     margin: 0 .5em;
-    width: calc(100% - 75%);
+    /*width: calc(100% - 75%);*/
+    width: calc(25% - 1em);
 }
+
 .container {
     margin: 2em;
 }
-.media {
+
+.media{
     width: 100%;
-    --light-bg: #FFF;
-    border-bottom: 1px;
-    --separator-color: #DDD;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
     padding: .5em;
-    overflow: auto;
+    overflow: hidden;
+
 }
+/*!*Review color selector setup*/
+
 .media-image {
-    width: 50px;
+    max-width: 50px;
     float: left;
     margin-top: 1.33em;
 }
+
 .media-body {
     float: right;
     width: calc(100% - 50px);
 }
+
 .profile-items {
     list-style: none;
+    padding: 0;
 }
-.profile-enter {
+
+.profile-entery {
     margin: .5em;
 }
