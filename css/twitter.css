@@ -109,11 +109,17 @@ a {
     overflow: auto;
 }
 .media-image {
-    /*width: 50%;*/
-    /*margin: 1.33em 0;*/
-    /*float: right;*/
+    width: 50px;
+    float: left;
+    margin-top: 1.33em;
 }
 .media-body {
-    /*width: 100%;*/
-    /*float: right;*/
+    float: right;
+    width: calc(100% - 50px);
+}
+.profile-items {
+    list-style: none;
+}
+.profile-enter {
+    margin: .5em;
 }
