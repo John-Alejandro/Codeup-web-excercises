@@ -40,15 +40,16 @@ h2, h3 {
 
 section {
     display: flex;
+    align-content: space-around;
     justify-content: space-between;
-
+    align-items: center;
     /* enter needed declarations here */
 }
 
 section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
-    align-content: baseline;
+    align-content: stretch;
     /* enter needed declarations here */
 }
 section:nth-of-type(1) div:last-child {
@@ -83,6 +84,7 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) h3 {
+    flex-grow: 5;
     /* enter needed declarations here */
 
 }
@@ -99,6 +101,7 @@ section:nth-of-type(3) h3 {
     height: 5em;
     width: 5em;
     background: brown;
+    flex-grow: 1;
     /* enter needed declarations here */
 }
 
@@ -107,6 +110,8 @@ section:nth-of-type(3) h3 {
 }
 
 section:nth-of-type(5) {
+    flex-grow: .1;
+    justify-content: space-evenly;
     /* enter needed declarations here */
 }
 
@@ -114,19 +119,23 @@ section:nth-of-type(5) {
     background: yellow;
     width: 2em;
     height: 2em;
-
-}
+    }
 
 section:nth-of-type(6) {
     background: coral;
     height: 14em;
-    /* enter needed declarations here */
+    display: flex;
+    align-self: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+        /* enter needed declarations here */
 }
 
 .grey-box {
     background: grey;
     width: 3em;
     height: 3em;
+
 }
 
 .grey-box:nth-of-type(odd) {
