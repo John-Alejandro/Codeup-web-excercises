@@ -3,15 +3,32 @@
 }
 
 .container {
-    color: #848487;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    background-color: #848487;
+    margin: auto;
+    border: 1px solid;
+    display: flex;
 }
 
-.a {
+.link {
+
+
+}
+
+.ul {
+    display:inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
     color: black;
-    display: inline-block;
+}
+.li {
+    padding: 1em;
+    text-decoration-color: black;
+}
+
+.hover {
+    color: blue;
+}
+.a {
+
 }
