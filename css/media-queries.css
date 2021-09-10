@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.alert-info {
+    border: 1px solid darkgrey;
+    padding: 2em;
+    background-color: #b4f0ed;
+    justify-content: center;
+}
+a {
+    align-content: center;
+    color: black;
+}
+nav {
+    margin: auto;
+}
+ul  {
+    list-style: none;
+}
+li {
+    border: 1px solid;
+    padding: 2em;
+    background-color: lightgrey;
+}
+h1 {
+    margin: auto;
+}
