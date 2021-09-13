@@ -58,9 +58,12 @@ footer {
     * {
         box-sizing: border-box;
     }
-    /*body  {*/
-    /*    display: flex;*/
-    /*}*/
+    body  {
+        display: flex;
+    }
+    .alert-info {
+         display: none;
+     }
     h1 {
         background-color: lightpink;
         justify-content: flex-start;
@@ -71,20 +74,17 @@ footer {
         width: 50%;
     }
     nav ul li {
+        flex-direction: row;
         padding: 1em;
     }
-    .alert-info {
-        display: none;
-    }
-    .section {
-        display: flex;
-    }
-    #main.main {
+    .main {
+        padding: 1em;
         background-color: #b4f0ed;
-        width: 45%;
+        width: 50%;
     }
-    .sub-section {
+    .sub-section  {
+        padding: 1em;
         background-color: coral;
-        width: 45%;
+        width: 50%;
     }
 }
