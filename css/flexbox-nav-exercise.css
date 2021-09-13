@@ -1,34 +1,21 @@
-.html {
+* {
     box-sizing: border-box;
 }
 
-.container {
-    background-color: #848487;
-    margin: auto;
-    border: 1px solid;
-    display: flex;
+html, body {
+    font-family: 'Work Sans', sans-serif;
 }
 
-.link {
-
-
-}
-
-.ul {
-    display:inline-block;
-    list-style-type: none;
-    margin: auto;
-    padding: 1em;
-    color: black;
-}
-.li {
-    padding: 1em;
-    text-decoration-color: black;
+a  {
+    display: inline-block;
 }
 
 a.hover {
     color: blue;
 }
-a {
-    display: inline-block;
+
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    padding: .2em;
 }
