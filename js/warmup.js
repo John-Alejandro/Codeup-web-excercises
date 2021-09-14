@@ -16,16 +16,16 @@
 //4 arguments = 4 parameters (numChildren, partnerName, geoLocation, jobTitle)
 //"Hey, you will live in geoLocation working as a jobtitle with numChildren kids and married to partnerName"
 
-function tellFortune(numChildren,spouseName,yourLocation,yourJob) {
-        var output  = "You have "+ numChildren + " children, your spouse's name is " + spouseName + " and you currently live in " + yourLocation + " and work as a " + yourJob + ".";
-        return output;
-}
-
-
-
-tellFortune(2,"Janie","Seattle","movie star")
-tellFortune(1,"Mary","D.C.","senator")
-tellFortune(2,"Liz","Austin","wrestler")
+// function tellFortune(numChildren,spouseName,yourLocation,yourJob) {
+//         var output  = "You have "+ numChildren + " children, your spouse's name is " + spouseName + " and you currently live in " + yourLocation + " and work as a " + yourJob + ".";
+//         return output;
+// }
+//
+//
+//
+// tellFortune(2,"Janie","Seattle","movie star")
+// tellFortune(1,"Mary","D.C.","senator")
+// tellFortune(2,"Liz","Austin","wrestler")
 
 
 
@@ -45,10 +45,28 @@ tellFortune(2,"Liz","Austin","wrestler")
 // output : return a formatted string
 
 
-function calculateDogAge(input,conversionNum) {
-    var doggieYearAge = input * conversionNum;
-    return " Your dog is " + doggieYearAge + " years old in dog years. Did you know that dogs age 7 dog years for every human year of age?";
+// function calculateDogAge(input,conversionNum) {
+//     var doggieYearAge = input * conversionNum;
+//     return " Your dog is " + doggieYearAge + " years old in dog years. Did you know that dogs age 7 dog years for every human year of age?";
+// }
+// calculateDogAge(7,7)
+
+
+// var hasTacos = [“blueberry muffin”,“banana”,“yogurt”,“cereal”,“brisket and egg taco”]
+// var noTacos = [“parfait”,“omlette de frumage”,“protein shake”,“fasting”]
+
+function tacoTuesday(){
+//     if (hasTacos.index("taco") === -1) || (noTacos.index("taco") === -1) {
+//         return false;
+//     } else {
+//         return true;
+//     }
+    for (var i =0; i< arr.length; i++) {
+        if (arr[i].includes("taco")) {
+            retrurn
+            true;
+        }
+    }
+    return false;
+
 }
-calculateDogAge(7,7)
-
-
