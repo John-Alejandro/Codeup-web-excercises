@@ -55,22 +55,36 @@
 // var hasTacos = [“blueberry muffin”,“banana”,“yogurt”,“cereal”,“brisket and egg taco”]
 // var noTacos = [“parfait”,“omlette de frumage”,“protein shake”,“fasting”]
 
-function tacoTuesday(){
+// function tacoTuesday(){
 //     if (hasTacos.index("taco") === -1) || (noTacos.index("taco") === -1) {
 //         return false;
 //     } else {
 //         return true;
 //     }
-    for (var i =0; i< arr.length; i++) {
-        if (arr[i].includes("taco")) {
-            retrurn
-            true;
-        }
-    }
-    return false;
+//    /
 
-}
-function catNeow() {
-    return
-}
-
+// //TODO: Finish coding this program. You need to stop the setInterval() method after the showTime() function has run five times
+//
+//
+// let count = 0;
+//
+// function showTime() {
+//
+//     // return new date and time
+//     let dateTime = new Date();
+//
+//     // return the time
+//     let time = dateTime.toLocaleTimeString();
+//
+//     count += 1;
+//
+//     //if the count reaches 5, stop the program.
+//
+//     console.log(time)
+// }
+//
+// let display = setInterval(showTime, 5000);
+// if (count >= 5){
+//     clearInterval(display);
+// }
+// console.log(time)
