@@ -14,12 +14,6 @@
     <li data-dbid="5">Item 5</li>
 </ul>
 <button id="btn1">Button 1</button>
-<script>
-    var listener = function (event) {
-    }
-    var btn1 = document.getElementById("click");
-    btn1.addEventListener("click",listener);
-</script>
 <button id="btn2">Button 2</button>
 <button id="btn3">Button 3</button>
 <button id="btn4">Button 4</button>
@@ -44,6 +38,11 @@
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
         // mainHeader.innerHTML = "JavaScript is Cool";
+        var listener = function () {
+            mainHeader.innerHTML = "JavaScript is Cool";
+        }
+        var btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",listener);
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header");
@@ -51,7 +50,8 @@
         console.log(subHeader);
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue';
+        // subHeader.style.color = 'blue';
+        var listener = function()
 
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
@@ -61,7 +61,7 @@
         // TODO: Set text color on every other list item to grey
         function makeLiGrey() {
             for (var i = 0; i <= listItems.length; i++)
-                if(i % 2 !== 0){
+                if(i % 2 === 0){
                    console.log(listItems[i]);
                     listItems[i].style.color = 'grey';
                 }
@@ -69,12 +69,13 @@
         makeLiGrey()
 
         // TODO: Set text color of li with dbid = 1 to blue
-        var oddElements = document.getElementsByClassName('1');
-        for (var i = 0; i < listItems.length; i++)
-            if(i % 2 !== 0){
-            console.log(oddElements[0]);
-        }
+        for (var i = 0; i < listItems.length; i++) {
+            if (listItems[i].getAttribute('data-dbid') === "1") {
+                console.log(listItems[i]);
+                listItems[i].style.color = 'blue';
 
+            }
+        }
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
