@@ -14,6 +14,12 @@
     <li data-dbid="5">Item 5</li>
 </ul>
 <button id="btn1">Button 1</button>
+<script>
+    var listener = function (event) {
+    }
+    var btn1 = document.getElementById("click");
+    btn1.addEventListener("click",listener);
+</script>
 <button id="btn2">Button 2</button>
 <button id="btn3">Button 3</button>
 <button id="btn4">Button 4</button>
@@ -79,7 +85,7 @@
         subParagraphs[0].innerText = 'Mission Accomplished!';
 
 
-    })();
+    })()
 </script>
 </body>
 </html>
