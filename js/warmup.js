@@ -88,3 +88,24 @@
 //     clearInterval(display);
 // }
 // console.log(time)
+
+
+
+// Write a function logEvens that will accept a number parameter as an arguement - that number will indicate the amount of times to print out all even numbers up to the arguement provided.
+
+// function logEvens(num) {
+//     for (i = 0; i <= num; i++) {
+//         if (i % 2 == 0) {
+//             return logEvens;
+//         }
+//     }
+// }
+//     console.log(logEvens);
+
+function logEvens(num) {
+    for (var i = 1; i <= num; i++){
+        if (i % 2 === 0){
+            console.log(i);
+        }
+    }
+}

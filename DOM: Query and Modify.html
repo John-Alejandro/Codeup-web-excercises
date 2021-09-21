@@ -49,8 +49,22 @@
         console.log(listItems);
 
         // TODO: Set text color on every other list item to grey
+        function makeLiGrey() {
+            for (var i = 0; i <= listItems.length; i++)
+                if(i % 2 !== 0){
+                   console.log(listItems[i]);
+                    listItems[i].style.color = 'grey';
+                }
+        }
+        makeLiGrey()
 
         // TODO: Set text color of li with dbid = 1 to blue
+        var oddElements = document.getElementsByClassName('1');
+        for (var i = 0; i < listItems.length; i++)
+            if(i % 2 !== 0){
+            console.log(oddElements[0]);
+        }
+
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
@@ -58,6 +72,9 @@
         console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        subParagraphs[0].innerText = 'Mission Accomplished!';
+
+
     })();
 </script>
 </body>
