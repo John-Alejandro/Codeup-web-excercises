@@ -103,9 +103,22 @@
 //     console.log(logEvens);
 
 function logEvens(num) {
-    for (var i = 1; i <= num; i++){
-        if (i % 2 === 0){
+    for (var i = 0; i <= num; i++){
+        if (i % 2 === 0 && i !==0){
             console.log(i);
         }
     }
 }
+
+// Write a function named logNum() - logNum will accept a number parameter indicating the number of times to LOG numbers up to what was provided. LogMun will let me know whether or not the number that we are iterating through is an EVEN or ODD nuber.
+
+function logNum(num) {
+    for (var i = 0; i <= num; i++){
+        if (i % 2 === 0) {
+            console.log(i + " is an even number");
+        }   else if (i % 2 !== 0); {
+            console.log(i + " is and odd number");
+        }
+    }
+}
+
