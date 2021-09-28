@@ -13,3 +13,23 @@
 //
 // $(".codeup").css("border","1px solid red");
 // need to rework and complete this first exercises
+
+$("#main-heading").click(function () {
+   // alert("Mission accepted by you clicking");
+   $(this).css("background-color", "red");
+})
+
+$("p").dblclick(function () {
+    $("p").css("font-size", `18px`);
+})
+
+$("li").hover(
+    function () {
+        $(this).css("color", "red");
+    },
+    function () {
+        $(this).css("color", "black");
+    }
+);
+
+
