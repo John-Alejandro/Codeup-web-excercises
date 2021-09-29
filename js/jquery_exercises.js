@@ -25,7 +25,7 @@ $("li").css("font-size","20px");
 
 $("li").css("list-style-type","none");
 
-$("li").css("background-color","coral");
+$("li").css("background-color","goldenrod");
 
 
 $("p").css("background-color", "yellow");
@@ -38,6 +38,8 @@ $("h1").ready(function () {
     var MI6 = $("h1").html();
     alert(MI6);
 })
+
+// $("h1","li","p").css("font-size", "80px","background-color", "coral","background-color", "yellow");
 
 // need to rework and complete this first exercises
 
