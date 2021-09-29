@@ -6,6 +6,7 @@ $(document).keyup(function(event){
         yourCodes.shift();
         yourCodes.push(event.keyCode);
     }
+    var isEqual = true;
     console.log(yourCodes);
     for (var i = 0; i < secretCode.length; i++) {
         if (yourCodes[i] !== secretCode[i]){
@@ -27,7 +28,6 @@ $(document).keyup(function(event){
 // After the correct Konami Code sequence is inputted, have the script alert the user: "You have added 30 lives! Other ideas:
 var secretCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
 var yourCodes = [];
-var isEqual = true;
 
 // need to work on creating an array to store keyup input
 // use for loop to compare each key input
