@@ -36,9 +36,13 @@ var yourCodes = [];
 // }
 
 // Change the background screen.
-// if (keyup === secretCode) {
-//     $("*").css("background-color", "red");
-// }
+eventTarget.addEventListener("keyup", event -> {
+    if (event.isComposing || event.keycode === secretCode){
+
+    }
+})
+    $().css("background-color", "red");
+
 
 //     Play a sound.
 $("")
