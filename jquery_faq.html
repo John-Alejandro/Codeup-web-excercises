@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>jquery_faq.html</title>
- </head>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+         crossorigin="anonymous"></script>
+<script src="/js/jquery_faq.js"></script>
+</head>
 <body>
 <p><strong>Frequently Asked Park Questions</strong></p>
 
@@ -38,8 +45,29 @@
     <dt><strong>Internships</strong></dt>
     <dd class="invisible">Lorem ipsum dolor sit amet, consectetur</dd>
 </dl>
-    <button class="btn-1">Click for Answers</button>
-          <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-     <script src="/js/jquery_faq.js"></script>
-</body>  
+<a id="clickForAnswers" href="">Click for Answers</a>
+
+ <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+
+
+<script>
+    $("#clickForAnswers").click(function (e) {
+        e.preventDefault();
+        $("dd").toggleClass("invisible")
+    });
+</script>
+</body>
 </html>
