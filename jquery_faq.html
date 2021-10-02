@@ -101,6 +101,16 @@
             $(this).children().last().css("background-color","yellow");
         })
     })
+
+    $("h3").click(function (e) {
+        e.preventDefault();
+        $(this).next().css("font-weight","bold")
+    })
+
+    $("li").click(function (e) {
+        e.preventDefault();
+        $(this).parent().children().first().css("color","blue")
+    })
 </script>
 </body>
 </html>
