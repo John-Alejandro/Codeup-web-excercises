@@ -9,7 +9,7 @@
 
 <table id="products">
     <thead>
-        <tr>
+        <tr class="tools">
             <th>Title</th>
             <th>Quantity</th>
             <th>Price</th>
@@ -24,6 +24,26 @@
 <script>
 (function() {
     "use strict";
+    function renderTool(tool) {
+        var html = "<tr>";
+        html += "<td>" + tool.title + "</td>";
+        html += "<td>" + tool.quantity + "</td>";
+        html += "<td>" + tool.price + "</td>";
+        html += "<td>" + tool.categories + "</td>";
+        html += "</tr>";
+
+
+        return html;
+    }
+
+    function renderTools(tools) {
+        var html = "";
+        for (var i = 0;i < tools.length; i++) {
+            html += renderTool(tools[i]);
+        }
+        return html;
+    }
+
     // TODO: Create an AJAX GET request for the file under data/inventory.json
     //Completed
     // TODO: Take the data from inventory.json and append it to the products table
@@ -31,21 +51,29 @@
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
 
-
     $.ajax("data/inventory.json").done(function(data) {
-
         console.log(data);
-    });
-
+        $("#insert-products").html(renderTools(data))
+        });
 })();
 </script>
 
+<button type="button">Refresh</button>
+<script>
+    function refreshPage (){
+        location.reload()
+    }
+</script>
 </body>
 </html>
 
 <!--//Download and save ajax-store.html.-->
+<!--    Completed-->
 <!--Create a data directory and download inventory.json to that folder.-->
+<!--    Completed-->
 <!--Your online tool store should load data from the JSON file using a get request and append the data to the table. You will need to use either $.ajax() or $.get(), and a .done() callback.-->
+<!--    Completed-->
 <!--Add some new entries to inventory.json and see how the data on the page gets updated.-->
+<!--    Completed-->
 <!--Add a "Refresh" button that will load inventory.json for you without having to refresh the entire page.-->
 <!--Add Twitter Bootstrap to your online store with some custom CSS to make the style your own.-->
