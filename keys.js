@@ -1,0 +1,1 @@
+var mapboxApiKey = "pk.eyJ1Ijoiam9obmFsZWphbmRybzEiLCJhIjoiY2t1ZDAwaWI4MTYwNTMybnoydG02YW91aiJ9.0guxiRddo3drudmfYytQSA";

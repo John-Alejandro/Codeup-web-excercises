@@ -29,7 +29,7 @@
         html += "<td>" + tool.title + "</td>";
         html += "<td>" + tool.quantity + "</td>";
         html += "<td>" + tool.price + "</td>";
-        html += "<td>" + tool.categories + "</td>";
+        html += "<td>" + tool.categories.join(",") + "</td>";
         html += "</tr>";
 
 
@@ -58,11 +58,19 @@
 })();
 </script>
 
-<button type="button">Refresh</button>
+<button id="type=">Refresh</button>
 <script>
-    function refreshPage (){
-        location.reload()
+    // function refreshPage (){
+    //     location.reload()
+    // }
+    $("#refresh").click(function(e) {
+        e.preventDefault();
+    })
+    function refresh() {
+        window.location.reload("refresh");
+        console.log(refresh);
     }
+
 </script>
 </body>
 </html>
