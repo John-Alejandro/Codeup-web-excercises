@@ -15,19 +15,53 @@
     </style>
 </head>
 <body>
-<h1>My Map of Favorite Eats</h1>
+<h1>Mapbox of My Favorite Eats</h1>
 <div id="map"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+
 <script>
     mapboxgl.accessToken = mapboxApiKey;
     const map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/satellite-streets-v11",
         zoom: 10,
-        center: [-98.58819399929733, 29.55826797244613]
+        center: [-98.58820828429351, 29.55837877334802]
+    });
+
+    geocode("12507 I-10 West, San Antonio, TX 78230",mapboxApiKey).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(15);
     })
+
+    var marker1 = new mapboxgl.Marker({
+        color: "red"
+    })
+    .setLngLat([-98.58820828429351, 29.55837877334802])
+    .setPopup(new mapboxgl.Popup()
+    .setHTML("<p>Carraba's Italian Grill Favorite</p>"))
+    .addTo(map)
+
+    var marker2 = new mapboxgl.Marker({
+        color: "blue"
+    })
+    .setLngLat([-98.48618125142433, 29.571872315220997])
+    .setPopup(new mapboxgl.Popup()
+    .setHTML("<p>Max and Louie's New York Diner Second Fav.</p>"))
+    .addTo(map)
+
+    var marker3 = new mapboxgl.Marker({
+        color: "green"
+    })
+    .setLngLat([-98.5255391164348, 29.470738057554264])
+    .setPopup(new mapboxgl.Popup()
+    .setHTML("<p>Jacala Mexican Restaurant Third Fav.</p>"))
+    .addTo(map)
+
+
 </script>
 </body>
 </html>
