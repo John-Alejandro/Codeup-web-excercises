@@ -16,52 +16,90 @@
 </head>
 <body>
 <h1>Mapbox of My Favorite Eats</h1>
-<div id="map"></div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
+<div id="map"></div>
 
 <script>
     mapboxgl.accessToken = mapboxApiKey;
-    const map = new mapboxgl.Map({
+    var  map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/mapbox/satellite-streets-v11",
         zoom: 10,
         center: [-98.58820828429351, 29.55837877334802]
     });
 
-    geocode("12507 I-10 West, San Antonio, TX 78230",mapboxApiKey).then(function(result) {
-        console.log(result);
+    var favRestaurantItem = [
+        {name: "Carraba's",
+            address: "12507 I-10 West, San antonio, Texas 78230"},
+        {name: "Max and Louies",
+            address: "226 W Bitters Ste 126, San antonio, Texas 78216"},
+        {name: "Jacala Mexican Restaurant",
+            address: "606 West Ave, San antonio, Texas 78201"}
+    ];
+
+    geocode(favRestaurantItem[0].address,mapboxApiKey).then(function(result) {
         map.setCenter(result);
-        map.setZoom(15);
+        var marker = new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo(map);
+        var favPopup = new mapboxgl.Popup()
+            .setHTML("<p>" + input.name +"</p>")
+
+        marker.setPopup(favPopup)
     })
 
-    var marker1 = new mapboxgl.Marker({
-        color: "red"
-    })
-    .setLngLat([-98.58820828429351, 29.55837877334802])
-    .setPopup(new mapboxgl.Popup()
-    .setHTML("<p>Carraba's Italian Grill Favorite</p>"))
-    .addTo(map)
+        //     console.log(result);
+    //     map.setCenter(result);
+    //     map.setZoom(18);
+    // })
 
-    var marker2 = new mapboxgl.Marker({
-        color: "blue"
-    })
-    .setLngLat([-98.48618125142433, 29.571872315220997])
-    .setPopup(new mapboxgl.Popup()
-    .setHTML("<p>Max and Louie's New York Diner Second Fav.</p>"))
-    .addTo(map)
 
-    var marker3 = new mapboxgl.Marker({
-        color: "green"
+    // reverseGeocode({lng: 98.58820828429351, lat: 29.55837877334802},mapboxApiKey).then(function(results) {
+    //     console.log(results);
+    // })
+
+    favRestaurantItem.forEach(function (input) {
+        geocode(favRestaurantItem[0].address,mapboxApiKey).then(function(result) {
+            map.setCenter(result);
+            var marker = new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo(map);
+            var favPopup = new mapboxgl.Popup()
+            .setHTML("<p>" + input.name +"</p>")
+
+            marker.setPopup(favPopup)
+        })
     })
-    .setLngLat([-98.5255391164348, 29.470738057554264])
-    .setPopup(new mapboxgl.Popup()
-    .setHTML("<p>Jacala Mexican Restaurant Third Fav.</p>"))
-    .addTo(map)
+    // var marker1 = new mapboxgl.Marker({
+    //     color: "red"
+    // })
+    // .setLngLat([-98.58820828429351, 29.55837877334802])
+    // .setPopup(new mapboxgl.Popup()
+    // .setHTML("<p>Carraba's Italian Grill Favorite</p>"))
+    // .addTo(map)
+    //
+    // var marker2 = new mapboxgl.Marker({
+    //     color: "blue"
+    // })
+    // .setLngLat([-98.48618125142433, 29.571872315220997])
+    // .setPopup(new mapboxgl.Popup()
+    // .setHTML("<p>Max and Louie's New York Diner Second Fav.</p>"))
+    // .addTo(map)
+    //
+    // var marker3 = new mapboxgl.Marker({
+    //     color: "green"
+    // })
+    // .setLngLat([-98.5255391164348, 29.470738057554264])
+    // .setPopup(new mapboxgl.Popup()
+    // .setHTML("<p>Jacala Mexican Restaurant Third Fav.</p>"))
+    // .addTo(map)
+
 
 
 </script>
+
 </body>
 </html>
