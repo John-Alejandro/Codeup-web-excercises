@@ -13,6 +13,24 @@
     // var delayedGreeting = window.setTimeout(greet,3000);
 
     // window.clearTimeout(delayedGreeting)
+
+    // function convertDateTime(s) {
+    //     return
+    // }
+// convert unix timestamp time milliseconds
+
+    function convertToDateTime(dNum) {
+        var dtInMs = dtNum * 1000; // seconds * 1000 = our milliseconds
+
+        var dateObj = new Date(dtInMs); // pass in milliseconds
+
+        return dateObj.toLocaleString()
+    }
+
+    // var ts = new Date(1618317040)
+    // console.log(ts.toDateString());
+
+
 </script>
 </body>
 </html>
