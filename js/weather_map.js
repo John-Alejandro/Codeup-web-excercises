@@ -70,8 +70,22 @@ function onDragEnd() {
             units: "imperial"
         }).done(function (data) {
             console.log(data);
+            var typesHTML = renderWeather(data.list[5])
+            console.log(typesHTML);
+            var fiveDayForecast = [];
+            console.log(fiveDayForecast)
 
+            // Clear card-body before rendering new location weather
+            $(".card-body").html("")
 
+            for (var i = 4; i < data.list.length; i+=8) {
+                console.log(data.list[i])
+                fiveDayForecast.push(data.list[i])
+            }
+            for(var i = 0; i < fiveDayForecast.length; i++) {
+                var oneDayForecast = renderWeather(fiveDayForecast[i]);
+                $(".card-body").eq(i).append(oneDayForecast);
+            }
         })
     })
 }
