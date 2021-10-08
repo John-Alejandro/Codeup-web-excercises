@@ -39,3 +39,42 @@ for(var i = 0; i < fiveDayForecast.length; i++) {
 }
 });
 
+mapboxgl.accessToken = mapboxApiKey;
+var map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-98.47736427170256, 29.458420487532127], // starting position [lng, lat]
+    zoom: 7 // starting zoom
+});
+
+var marker = new mapboxgl.Marker({
+    draggable: true
+})
+    .setLngLat([-98.47736427170256, 29.458420487532127])
+    .addTo(map);
+
+
+function onDragEnd() {
+    const lngLat = marker.getLngLat();
+    console.log(lngLat);
+
+    reverseGeocode(lngLat, mapboxApiKey).then(function (location) {
+        console.log(location);
+        // var location;
+        var newLocationArr = location.split(', ');
+        console.log(newLocationArr[1]);
+
+        $.get("http://api.openweathermap.org/data/2.5/forecast", {
+            APPID: openWeatherApiKey,
+            q: newLocationArr[1],
+            units: "imperial"
+        }).done(function (data) {
+            console.log(data);
+
+
+        })
+    })
+}
+marker.on("dragend", onDragEnd);
+
+
