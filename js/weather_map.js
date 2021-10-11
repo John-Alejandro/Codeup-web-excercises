@@ -1,13 +1,18 @@
 "use strict"
 function renderWeather(forecast) {
+    var iconcode = forecast.weather[0].icon;
+    var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
     var html = "<h2 class='card-title'>" + forecast.dt_txt.split(" ")[0] + "</h2>";
     html += '<p class="card-text">'
-    html += "<h4>TEMP  " + forecast.main.temp + "</h4>";
-    html += "<h4> DESCRIPTION  " + forecast.weather[0].description + "</h4>";
-    html += "<h4> HUMIDITY  " + forecast.main.humidity + "% </h4>";
-    html += "<h4> WIND  " + forecast.wind.speed + "</h4>";
-    html += "<h4> PRESSURE  " + forecast.main.pressure + "</h4>";
+    html += "<h4>TEMP:  " + forecast.main.temp + "</h4>";
+    html += "<h4> " + forecast.weather[0].icon + "</h4>";
+    html += "<h4> DESCRIPTION: " + forecast.weather[0].description + "</h4>";
+    html += "<h4> HUMIDITY:  " + forecast.main.humidity + "% </h4>";
+    html += "<h4> WIND:  " + forecast.wind.speed + "</h4>";
+    html += "<h4> PRESSURE:  " + forecast.main.pressure + "</h4>";
     html += '</p>'
+
+    $('.wicon').attr('src', iconurl);
 
     return html;
 
