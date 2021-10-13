@@ -4,7 +4,7 @@ function renderWeather(forecast) {
     html += '<p class="card-text">'
     html += "<h4>TEMP:  " + forecast.main.temp + "</h4>";
     // html += "<img src='.wicon'>" + forecast.weather[0].icon + "</img>";
-    html += "<img src='http://openweathermap.org/img/w/' 'src', iconurl> " + forecast.weather[0].icon + "</img>";
+    html += "<img src='http://openweathermap.org/img/w/'/" + forecast.weather[0].icon + ">";
     html += "<h4> DESCRIPTION: " + forecast.weather[0].description + "</h4>";
     html += "<h4> HUMIDITY:  " + forecast.main.humidity + "% </h4>";
     html += "<h4> WIND:  " + forecast.wind.speed + "</h4>";
