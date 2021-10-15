@@ -43,16 +43,16 @@
 // Let's try working with the Star Wars API!
 
 // TODO: Using Promises, make a fetch request to the Star Wars API
-// fetch('https://swapi.dev/api/films')
+fetch('https://swapi.dev/api/films')
 // // TODO: Use Promise chaining to console log the json response
-//     .then((response)=>{
-//         //console.log(response.json());
-//         return response.json();
-//     }).then((starWarsFilmsData)=>{
-//         //starWarsFilmsData is the parsed object from the call to response.json()
-//         console.log(starWarsFilmsData.results);
-//         starWarsFilmsData.results.forEach((film)=>{console.log(film.title)})
-// })
+    .then((response)=>{
+        //console.log(response.json());
+        return response.json();
+    }).then((starWarsFilmsData)=>{
+        //starWarsFilmsData is the parsed object from the call to response.json()
+        console.log(starWarsFilmsData.results);
+        starWarsFilmsData.results.forEach((film)=>{console.log(film.title)})
+})
 // TODO: chain another method that iterates through the results array and console logs the names
 
 // TODO: Demonstrate Promise.all and Promise.race
