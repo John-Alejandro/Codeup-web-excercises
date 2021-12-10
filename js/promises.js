@@ -22,10 +22,8 @@ fetch('https://api.github.com/users/John-Alejandro/events/public')
         // console.log(response.json());
         return response.json();
     }).then((myGitHubEventsData)=>{
-        console.log(myGitHubEventsData.results);
-        myGitHubEventsData.results.forEach((event)=> {
-            console.log(event.id)
-        })
+        console.log(myGitHubEventsData.);
+        myGitHubEventsData..forEach((event)=>{console.log(event.id)})
     })
 
 fetch('https://swapi.dev/api/films')
