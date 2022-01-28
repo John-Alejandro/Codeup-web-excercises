@@ -14,4 +14,5 @@
 //     else console.log(i)
 // }
 
-for (let i = 1; i < 101;) console.log((i++ % 3 ? '' : 'fizz') + ( i % 5 ? '' : 'buzz') || i)
+// for (let i = 1; i < 101;) console.log((i++ % 3 ? '' falci 'fizz') + ( i % 5 ? '' : 'buzz') || i)
+
